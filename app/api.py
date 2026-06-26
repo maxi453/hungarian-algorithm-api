@@ -9,7 +9,7 @@ app = FastAPI()
 
 
 #genero el protocolo a seguir cuando llega un post
-@app.post("/resolver", response_model = schemas.Resultado) #porque app.post y no caca.cacona?? de q depende cadacosa 
+@app.post("/resolver", response_model = schemas.Resultado)
 #llama a la funcion resolver y el resultado tiene q corresponderse a schemas.Resultado
 
 def resolver(entrada: schemas.matriz_entrada):

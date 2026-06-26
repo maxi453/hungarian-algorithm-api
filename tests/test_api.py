@@ -73,4 +73,26 @@ def test_matriz_dispareja():
     assert not "matching" in cuerpo
     assert not "min_sum" in cuerpo
     
+
+def test_matriz_negativa():
+
+    datos = {
+        "matriz":[
+            [1,8,-4],
+            [14,-9,1],
+            [-25,14,1]
+        ]
+    }
     
+
+    respuesta = client.post(
+        "/resolver",
+        json = datos
+    )
+
+    assert respuesta.status_code == 200
+
+    cuerpo = respuesta.json()
+
+    assert "matching" in cuerpo
+    assert "min_sum" in cuerpo

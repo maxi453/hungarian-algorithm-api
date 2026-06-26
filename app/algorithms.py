@@ -61,8 +61,8 @@ def formatear_matching(filas, columnas):
 
 
 def hungaro_resolver(matriz):
-    # Resuelve el problema de asignación óptima utilizando
-    # una implementación del algoritmo Húngaro provista por SciPy.
+    # resuelve el problema de asignacion optima utilizando
+    # una implementación del algoritmo hungaro provista por SciPy.
     # Devuelve dos listas:
     # filas[i] esta asignada a columnas[i]
     filas, columnas = linear_sum_assignment(matriz)

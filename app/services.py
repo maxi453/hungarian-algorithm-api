@@ -13,7 +13,6 @@ def validar_matriz(entrada: schemas.matriz_entrada):
             status_code = 400,
             detail="matriz invalida(Filas de diferente tamaño)"
         )
-    return True # no se bien si hace falta 
 
 
 def procesar_resolver(entrada: schemas.matriz_entrada): # no entiendoque queres q haga esta 
